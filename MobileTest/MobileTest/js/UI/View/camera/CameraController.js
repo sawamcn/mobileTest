@@ -26,11 +26,11 @@
       };
 
       CameraController.prototype.camera = function(router) {
-        var onFile, onSuccess;
+        var onFail, onSuccess;
         onSuccess = function(imageUrl) {
           return alert(imageUrl);
         };
-        onFile = function(message) {
+        onFail = function(message) {
           return alert(message);
         };
         return navigator.camera.getPicture(onSuccess, onFail, {

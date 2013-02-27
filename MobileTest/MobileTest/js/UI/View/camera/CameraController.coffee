@@ -10,7 +10,7 @@ define(['jquery', 'underscore', 'backbone'], ($, _, Backbone)->
 		camera: (router)->
 			onSuccess = (imageUrl) ->
 				alert(imageUrl)
-			onFile = (message)->
+			onFail = (message)->
 				alert(message)
 			navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI })
 
