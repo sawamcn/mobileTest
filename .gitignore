@@ -1,0 +1,4 @@
+_ReSharper.MobileTest
+/MobileTest/*.suo
+/MobileTest/MobileTest/obj
+/MobileTest/MobileTest/bin

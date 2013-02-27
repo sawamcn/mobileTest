@@ -1,0 +1,17 @@
+﻿<div data-role="header" >
+    <h1>
+        联系人
+    </h1>
+    <a href="#!/index"   data-role="button" data-icon="home" data-iconpos="notext" data-direction="reverse">返回</a>
+    </div>
+
+<div data-role="content" >
+    <ul data-role="listview" data-inset="true">
+        <% for (var i = 0; i < data.length; i++) { %>
+        <% var item = data[i]; %>
+        <li><a href="#!/contactDetail/<%= item.id%>">
+            <%= item.name %></a> </li>
+        <% } %>
+    </ul>
+</div>
+<!-- /content -->
