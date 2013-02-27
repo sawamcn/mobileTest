@@ -5,6 +5,8 @@ define(['require','jquery', 'underscore', 'backbone',  'jqmobile'], (require, $,
 			'!/index': 'index'
 			'!/contactIndex': 'contactIndex'
 			'!/contactDetail/:id': 'contactDetail'
+			'!/cameraIndex' : 'cameraIndex'
+			'!/camera' : 'camera'
 			'*actions': 'defaultAction'
 		}
 		firstPage:true
@@ -33,6 +35,19 @@ define(['require','jquery', 'underscore', 'backbone',  'jqmobile'], (require, $,
 				controller = new ContactController()
 				controller.detail(self, id)
 				self.changePage(controller.el)
+			)
+		cameraIndex: ->
+			self = @
+			require(['view/camera/CameraController'], (CameraController)->
+				controller = new CameraController()
+				controller.index(self)
+			)
+		camera: ->
+			self = @
+			require(['view/camera/CameraController'], (CameraController)->
+				controller = new CameraController()
+				controller.camera(self)
+				self.navigate("!/cameraIndex", true)			
 			)
 		changePage: (el) ->
 			$(el).attr('data-role', 'page')
