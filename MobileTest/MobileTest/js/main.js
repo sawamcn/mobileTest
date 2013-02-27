@@ -9,7 +9,7 @@
       backbone: 'lib/backbone/backbone',
       view: 'UI/View',
       service: 'Service',
-      viewModel: 'ViewModel'
+      viewModel: 'UI/ViewModel'
     },
     shim: {
       underscore: {
