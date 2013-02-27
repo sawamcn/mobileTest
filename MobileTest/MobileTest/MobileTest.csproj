@@ -44,7 +44,6 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
     <Content Include="images\ajax-loader.gif" />
     <Content Include="images\ajax-loader.png" />
     <Content Include="images\icons-18-black.png" />
@@ -61,117 +60,110 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="www\css\Bootstrap.css" />
-    <Content Include="www\css\Bootstrap.min.css" />
-    <Content Include="www\css\images\ajax-loader.png" />
-    <Content Include="www\css\images\icons-18-black.png" />
-    <Content Include="www\css\images\icons-18-white.png" />
-    <Content Include="www\css\images\icons-36-black.png" />
-    <Content Include="www\css\images\icons-36-white.png" />
-    <Content Include="www\css\images\ajax-loader.gif" />
-    <Content Include="www\css\jquery.mobile-1.1.0.css" />
-    <Content Include="www\css\style.css" />
-    <Content Include="www\css\img\comperes\ningyan.png" />
-    <Content Include="www\css\jquery.mobile-1.2.0.min.css" />
-    <Content Include="www\index.html" />
-    <Content Include="www\js\Application.js">
+    <Content Include="css\Bootstrap.css" />
+    <Content Include="css\Bootstrap.min.css" />
+    <Content Include="css\images\ajax-loader.png" />
+    <Content Include="css\images\icons-18-black.png" />
+    <Content Include="css\images\icons-18-white.png" />
+    <Content Include="css\images\icons-36-black.png" />
+    <Content Include="css\images\icons-36-white.png" />
+    <Content Include="css\images\ajax-loader.gif" />
+    <Content Include="css\jquery.mobile-1.1.0.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\img\comperes\ningyan.png" />
+    <Content Include="css\jquery.mobile-1.2.0.min.css" />
+    <Content Include="index.html" />
+    <Content Include="js\Application.js">
       <DependentUpon>Application.coffee</DependentUpon>
     </Content>
-    <Content Include="www\js\lib\angular\angular.min.js" />
-    <Content Include="www\js\lib\backbone\backbone-min.js" />
-    <Content Include="www\js\lib\backbone\backbone.js" />
-    <Content Include="www\js\lib\jquery\jquery-1.9.1.min.js" />
-    <Content Include="www\js\lib\jquery.mobile\jquery.mobile-1.2.0.min.js" />
-    <Content Include="www\js\lib\jquery\jquery_1.7_min.js" />
-    <Content Include="www\js\lib\knockout\knockout-2.2.1.js" />
-    <Content Include="www\js\lib\requirejs\require.js" />
-    <Content Include="www\js\lib\underscore\underscore-min.js" />
-    <Content Include="www\js\lib\underscore\underscore.js" />
-    <Content Include="www\js\main.js">
+    <Content Include="js\lib\angular\angular.min.js" />
+    <Content Include="js\lib\backbone\backbone-min.js" />
+    <Content Include="js\lib\backbone\backbone.js" />
+    <Content Include="js\lib\jquery\jquery-1.9.1.min.js" />
+    <Content Include="js\lib\jquery.mobile\jquery.mobile-1.2.0.min.js" />
+    <Content Include="js\lib\jquery\jquery_1.7_min.js" />
+    <Content Include="js\lib\knockout\knockout-2.2.1.js" />
+    <Content Include="js\lib\requirejs\require.js" />
+    <Content Include="js\lib\underscore\underscore-min.js" />
+    <Content Include="js\lib\underscore\underscore.js" />
+    <Content Include="js\main.js">
       <DependentUpon>main.coffee</DependentUpon>
     </Content>
-    <Content Include="www\js\plugin\jqm.config.js" />
-    <Content Include="www\js\plugin\jquery.mobile.subpage.js" />
-    <Content Include="www\js\Service\ContactService.js">
+    <Content Include="js\plugin\jqm.config.js" />
+    <Content Include="js\plugin\jquery.mobile.subpage.js" />
+    <Content Include="js\Service\ContactService.js">
       <DependentUpon>ContactService.coffee</DependentUpon>
     </Content>
-    <Content Include="www\js\text.js" />
-    <Content Include="www\js\UI\ViewModel\HomeIndexViewModel.js">
+    <Content Include="js\text.js" />
+    <Content Include="js\UI\ViewModel\HomeIndexViewModel.js">
       <DependentUpon>HomeIndexViewModel.coffee</DependentUpon>
     </Content>
-    <Content Include="www\js\UI\ViewModel\HomeDetailViewModel.js">
+    <Content Include="js\UI\ViewModel\HomeDetailViewModel.js">
       <DependentUpon>HomeDetailViewModel.coffee</DependentUpon>
     </Content>
-    <Content Include="www\js\UI\View\home\HomeController.js">
+    <Content Include="js\UI\View\home\HomeController.js">
       <DependentUpon>HomeController.coffee</DependentUpon>
     </Content>
-    <Content Include="www\js\UI\View\home\index.html" />
-    <Content Include="www\js\MyRouter.js">
+    <Content Include="js\UI\View\home\index.html" />
+    <Content Include="js\MyRouter.js">
       <DependentUpon>MyRouter.coffee</DependentUpon>
     </Content>
-    <Content Include="www\js\UI\View\contact\detail.html" />
-    <Content Include="www\js\UI\View\contact\index.html" />
-    <Content Include="www\js\UI\View\contact\ContactController.js">
+    <Content Include="js\UI\View\contact\detail.html" />
+    <Content Include="js\UI\View\contact\index.html" />
+    <Content Include="js\UI\View\contact\ContactController.js">
       <DependentUpon>ContactController.coffee</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="www\js\Application.coffee">
+    <None Include="js\Application.coffee">
       <Compile>True</Compile>
       <Minify>True</Minify>
       <Bare>False</Bare>
       <Iced>False</Iced>
     </None>
-    <None Include="www\js\main.coffee">
+    <None Include="js\main.coffee">
       <Compile>True</Compile>
       <Minify>True</Minify>
       <Bare>False</Bare>
       <Iced>False</Iced>
     </None>
-    <None Include="www\js\Service\ContactService.coffee">
+    <None Include="js\Service\ContactService.coffee">
       <Compile>True</Compile>
       <Minify>True</Minify>
       <Bare>False</Bare>
       <Iced>False</Iced>
     </None>
-    <None Include="www\js\UI\ViewModel\HomeIndexViewModel.coffee">
+    <None Include="js\UI\ViewModel\HomeIndexViewModel.coffee">
       <Compile>True</Compile>
       <Minify>True</Minify>
       <Bare>False</Bare>
       <Iced>False</Iced>
     </None>
-    <None Include="www\js\UI\ViewModel\HomeDetailViewModel.coffee">
+    <None Include="js\UI\ViewModel\HomeDetailViewModel.coffee">
       <Compile>True</Compile>
       <Minify>True</Minify>
       <Bare>False</Bare>
       <Iced>False</Iced>
     </None>
-    <None Include="www\js\MyRouter.coffee">
+    <None Include="js\MyRouter.coffee">
       <Compile>True</Compile>
       <Minify>True</Minify>
       <Bare>False</Bare>
       <Iced>False</Iced>
     </None>
-    <None Include="www\js\UI\View\home\HomeController.coffee">
+    <None Include="js\UI\View\home\HomeController.coffee">
       <Compile>True</Compile>
       <Minify>True</Minify>
       <Bare>False</Bare>
       <Iced>False</Iced>
     </None>
-    <None Include="www\js\UI\View\contact\ContactController.coffee">
+    <None Include="js\UI\View\contact\ContactController.coffee">
       <Compile>True</Compile>
       <Minify>True</Minify>
       <Bare>False</Bare>
